@@ -1,0 +1,23 @@
+body{
+    background-color: yellow;
+}
+.ballContainer{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.greenball{
+    background-color: green;
+}
+.ball{ 
+    border: 5px solid black;
+    width: 150px; 
+    height: 150px;
+    margin: 80px; 
+    border-radius: 90px;
+}
+#redball{
+    background-color: #ff0000;
+}
