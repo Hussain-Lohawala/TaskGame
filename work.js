@@ -14,10 +14,15 @@ function removeBall(){
     }
 
 }
-function reset(){
-    while(greenBallCount){
-        document.getElementsByClassName("greenball")[0].remove();
-        greenBallCount-=1;
+function startReset(){
+    if(greenBallCount==0){
+        generateGreen();
     }
-    document.getElementById('resetButton').innerHTML="START";
+    else{
+        while(greenBallCount){
+            document.getElementsByClassName("greenball")[0].remove();
+            greenBallCount-=1;
+        }
+        document.getElementById('resetButton').innerHTML="START";
+    }
 }

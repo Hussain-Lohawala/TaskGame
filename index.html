@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1 id="Heading">Task Game</h1>
-    <h2>Instructions: Hover on Red ball to Play and click on Red ball to destroy green ball</h2>
-    <button id="resetButton" onclick="reset()">START</button>
+    <h2>Instructions: You can start the game either by clicking on "START" button or hovering on the Red ball and click on Red ball to destroy green ball</h2>
+    <button id="resetButton" onclick="startReset()">START</button>
     <div class="ballContainer">
         <div class= "ball" id ="redball" onmouseover="generateGreen()" onclick="removeBall()"></div>
     </div>
